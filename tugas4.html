@@ -1,0 +1,79 @@
+<html>
+    <title>
+        Keyboard
+    </title>
+    <style>
+        .input {
+            height: 40px;
+            line-height: 40px;
+            background: burlywood;
+            width: 566px;
+            border-radius: 5px;
+            padding: 0 8px;
+        }
+        button {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            margin: 4px;
+            border-radius: 5px;
+            cursor: pointer;
+            background: bisque;
+        }
+        .diff {
+            width: 60px;
+        }
+    </style>
+    <head>
+        <body>
+            <div class="input">
+                <span id="v1"></span>
+            </div>
+            <div>
+                <button onclick="addAlphabet('A')">A</button>
+                <button onclick="addAlphabet('B')">B</button>
+                <button onclick="addAlphabet('C')">C</button>
+                <button onclick="addAlphabet('D')">D</button>
+                <button onclick="addAlphabet('E')">E</button>
+                <button onclick="addAlphabet('F')">F</button>
+                <button onclick="addAlphabet('G')">G</button>
+                <button onclick="addAlphabet('H')">H</button>
+                <button onclick="addAlphabet('I')">I</button>
+                <button onclick="addAlphabet('J')">J</button>
+                <button onclick="deleteData('Del')" class="diff">Del</button>
+            </div>
+            <div>
+                <button onclick="addAlphabet('K')">K</button>
+                <button onclick="addAlphabet('L')">L</button>
+                <button onclick="addAlphabet('M')">M</button>
+                <button onclick="addAlphabet('N')">N</button>
+                <button onclick="addAlphabet('O')">O</button>
+                <button onclick="addAlphabet('P')">P</button>
+                <button onclick="addAlphabet('Q')">Q</button>
+                <button onclick="addAlphabet('R')">R</button>
+                <button onclick="addAlphabet('S')">S</button>
+                <button onclick="addAlphabet('T')">T</button>
+                <button onclick="clearData('Clear')" class="diff">Clear</button>
+            </div>
+            <div>
+                <button onclick="addAlphabet('U')">U</button>
+                <button onclick="addAlphabet('V')">V</button>
+                <button onclick="addAlphabet('W')">W</button>
+                <button onclick="addAlphabet('X')">X</button>
+                <button onclick="addAlphabet('Y')">Y</button>
+                <button onclick="addAlphabet('Z')">Z</button>
+                <button onclick="addSpace('Space')" class="diff">Space</button>
+            </div>
+            <script>
+                function addAlphabet(add) {
+                    const alpha = document.getElementById("v1");
+                    alpha.innerHTML = alpha.innerHTML + add;
+                }
+                function clearData() {
+                    document.getElementById("v1").innerHTML = ""
+                }
+            </script>
+        </body>
+    </head>
+</html>
