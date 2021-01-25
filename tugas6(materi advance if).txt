@@ -1,0 +1,27 @@
+Operasianal kondisional (ternary) adalah satu-satunya operator yang hanya membutuhkan tiga operator. 
+Operator ini sering digunakan sebagai jalan pintas untuk `if` statement.
+
+Syntax :
+condition ? expr1 : expr2 
+
+Parameters
+- condition (atau conditions) sebuah ekspresi akan menguji apakah menghasilkan true atau false.
+- expr1, expr2 ekspresi yang akan dilakukan setelah kondisi terpenuhi.
+
+Jika condition menghasilkan true, maka operator ini akan menghasilkan/mengembalikan nilai dari expr1; dan jika sebaliknya, 
+ini akan menghasilkan/mengembalikan nilai dari expr2.
+
+.....
+
+Operator Perbandingan
+1. ==
+Perbandingan dengan menggunakan simbol == hanya akan membandingkan nilai saja.
+2. ===
+Sedangkan yang menggunakan === akan membandingkan dengan tipe data juga.
+
+Operator Logika
+Operator logika digunakan untuk melakukan operasi terhadap dua nilai boolean.
+Logika AND &&
+Logika OR  ||
+Negasi atau kebalikan !
+
